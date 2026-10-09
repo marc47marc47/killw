@@ -2,6 +2,15 @@
 name = "killw"
 version = "0.1.0"
 edition = "2021"
+description = "A Windows kill-like command-line utility to terminate processes by PID, written with the Windows API"
+readme = "README.md"
+repository = "https://github.com/marc47marc47/killw"
+license = "MIT"
+keywords = ["kill", "process", "windows", "cli"]
+categories = ["command-line-utilities", "os::windows-apis"]
+
+[package.metadata.docs.rs]
+targets = ["x86_64-pc-windows-msvc"]
 
 [dependencies]
 windows = { version = "0.54.0", features = [
